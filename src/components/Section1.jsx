@@ -31,7 +31,7 @@ function Section1() {
 
                         {confirm ? 
                             <div>
-                            <input type='text'class=' focus:outline-none   border-2 rounded-l-xl border-blue-ribbon p-2 w-80'     placeholder='Enter your Email'></input><button onClick={clickHandler} class='p-2 border-2 border-blue-ribbon text-white w-fit rounded-r-xl bg-blue-ribbon'>Get Early Access</button>
+                            <input type='text'class=' focus:outline-none   border-2 rounded-l-xl border-blue-ribbon p-2 w-80'     placeholder='Enter your Email'></input><button onClick={clickHandler} class='p-2 border-2 border-blue-ribbon text-white w-fit rounded-r-xl bg-blue-ribbon '>Get Early Access</button>
                         </div>
                         : 
                         <div class=''>
