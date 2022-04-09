@@ -2,14 +2,18 @@ module.exports = {
   important: true,
   content: ["./src/**/*.{js,jsx,ts,tsx}",],
   theme: {
+    
     extend: {
+      maxWidth: {
+        '9xl': '1500px',
+      },
       
       boxShadow: {
         'tw-shad': '2px -4px 100px 100px #0000000f',
         'tw-shad2': '0 10px 30px 5px rgb(0 0 0/0.1),0 4px 6px -4px rgb(0 0 0/0.1)',
       },
       borderRadius: {
-        'rounded-4xl': '2rem',
+        '2rem': '2rem',
         '4rem': '4rem',
       },
       padding: {
@@ -21,6 +25,9 @@ module.exports = {
         '480px': '480px',
         '550px': '550px',
         '500px': '500px',
+        '756px': '756px',
+        '1000px': '1380px',
+        '1500px': '1600px',
         
       },
       minHeight: {
@@ -32,6 +39,7 @@ module.exports = {
         '900px': '900px',
         '228': '50rem',
         '130': '27.5rem',
+        '468px':'468px',
       },
       backgroundImage: {
         'hero-pattern': "url('./images/Dots.png')",

@@ -30,9 +30,9 @@ function Section2() {
     
   return (
       
-      <div class='shadow-tw-shad  rounded-t-4rem '>
-           <div class='max-w-5xl block m-auto border border-transparent'>
-                <p class='text-xl text-center  mt-36 mb-20'>We understand your needs to <span class='bg-confetti'>build integrated applications</span> in today’s hyper-connected world. <span class='bg-confetti'>Skip the hassle</span> to repeat a cumbersome process <span class='bg-confetti'>for each unique integration.</span>  
+      <div class='shadow-tw-shad rounded-t-2rem lg:rounded-t-4rem   '>
+           <div class='lg:max-w-5xl sm:max-w-xl md:max-w-3xl block m-auto border border-transparent  sm:px-0 px-2.5'>
+                <p class='text-xl text-center  md:mx-44 mt-36 mb-20'>We understand your needs to <span class='bg-confetti'>build integrated applications</span> in today’s hyper-connected world. <span class='bg-confetti'>Skip the hassle</span> to repeat a cumbersome process <span class='bg-confetti'>for each unique integration.</span>  
                     Join us to build reliable connections with multiple providers and <span class='bg-confetti'>cruise through backend</span> with ease.</p>
 
                 <div class=" block m-auto  w-fit my-12">
@@ -40,7 +40,7 @@ function Section2() {
                 </div>
             
 
-                <p class='text-6xl text-center mt-20 mb-16 font-bold'><span class='text-blue-ribbon'>Skip</span> The Hassle</p>
+                <p class=' text-5xl md:text-6xl text-center mt-20 mb-16 font-bold'><span class='text-blue-ribbon'>Skip</span> The Hassle</p>
 
                 <div class=' w-fit'>  
                     <img src={group1} alt=''/>
@@ -52,27 +52,28 @@ function Section2() {
                     <img src={top} alt=''/>
                 </div>
 
-                <p class='text-xl text-center  mt-36 mb-20'>We're building an ecosystem where <span class='bg-confetti'>anyone can get inspired </span> with application templates, discover novel ideas from top builders, and <span class='bg-confetti'>publish revolutionary applications</span> that could <span class='bg-confetti'>change the world.</span>  
+                <p class=' md:mx-44 text-xl text-center mt-24 md:mt-36 mb-20'>We're building an ecosystem where <span class='bg-confetti'>anyone can get inspired </span> with application templates, discover novel ideas from top builders, and <span class='bg-confetti'>publish revolutionary applications</span> that could <span class='bg-confetti'>change the world.</span>  
                    </p>
 
 
                    {/* Input active and submit */}
 
                    {confirm ? 
-                        <div class='block w-fit m-auto mb-40'>
-                            <input type='text'class=' focus:outline-none   border-2 rounded-l-xl border-blue-ribbon p-2 w-80'     placeholder='Enter your Email'></input><button onClick={clickHandler} class='p-2 border-2 border-blue-ribbon text-white w-fit rounded-r-xl bg-blue-ribbon'>Get Early Access</button>
+                        <div class='block w-64 md:w-fit lg:w-fit m-auto mb-40 '>
+                            <input type='text'class='text-center focus:outline-none rounded-t-xl  border-2 md:rounded-l-xl md:rounded-tr-none border-blue-ribbon p-2 w-64 md:w-80'     placeholder='Enter your Email'></input>
+                            <button onClick={clickHandler} class='w-64  p-2 border-2 border-blue-ribbon text-white md:w-fit rounded-b-xl md:rounded-r-xl md:rounded-bl-none bg-blue-ribbon'>Get Early Access</button>
                         </div>
                         : 
-                        <div class='block w-fit m-auto mb-40'>
-                            <button class='p-2 border-2 border-blue-ribbon text-white w-440 rounded-xl bg-blue-ribbon'>Thank you for your interest!</button>
-                            <div class=' relative p-2 w-440'>
+                        <div class='block w-64 md:w-fit m-auto mb-40 '>
+                            <button class='w-64 p-2 border-2 border-blue-ribbon text-white md:w-440 rounded-xl bg-blue-ribbon'>Thank you for your interest!</button>
+                            <div class=' relative p-2 w-64 md:w-440 '>
                                     {/* received */}
-                                <div class='inline-block  absolute left-2'>
-                                    <img src={check} alt='check' class='inline-block mr-2'></img>
+                                <div class='block text-center md:inline-block  md:absolute md:left-2 mb-4 '>
+                                    <img src={check} alt='check' class='inline-block mr-2 '></img>
                                     <p class='inline-block'>An email has been sent to your inbox</p>
                                 </div>
                                 {/* not received */}
-                                <div class='inline-block  absolute right-2'>
+                                <div class='text-center block md:inline-block  md:absolute md:right-2 '>
                                     <p>Didn't receive?</p>
                                     <div class='cursor-pointer ' onClick={clickHandler2}>
                                          <img src={resend} alt='resend' class='inline-block mr-1'></img><p class='inline-block text-red-500 '>Resend</p>
@@ -86,8 +87,8 @@ function Section2() {
                         }
 
                     {/* back to the top Div */}
-                    <div class='h-32  relative cursor-pointer' onClick={scrollToTop}>
-                        <div class='w-fit  absolute right-0'>
+                    <div class='h-fit  fixed bottom-4 right-4 md:right-12  cursor-pointer' onClick={scrollToTop}>
+                        <div class='w-fit '>
                             <img src={backtop} alt='backtop' class='block m-auto'></img>
                             <p>Back to top </p>
                         </div>
