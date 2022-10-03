@@ -60,7 +60,7 @@ function Section2() {
 
                    {confirm ? 
                         <div class='block w-64 md:w-fit lg:w-fit m-auto mb-40 '>
-                            <input type='text'class='text-center focus:outline-none rounded-t-xl  border-2 md:rounded-l-xl md:rounded-tr-none border-blue-ribbon p-2 w-64 md:w-80'     placeholder='Enter your Email'></input>
+                            <input type='text'class='text-center md:text-left focus:outline-none rounded-t-xl  border-2 md:rounded-l-xl md:rounded-tr-none border-blue-ribbon p-2 w-64 md:w-80'     placeholder='Enter your Email'></input>
                             <button onClick={clickHandler} class='w-64  p-2 border-2 border-blue-ribbon text-white md:w-fit rounded-b-xl md:rounded-r-xl md:rounded-bl-none bg-blue-ribbon'>Get Early Access</button>
                         </div>
                         : 

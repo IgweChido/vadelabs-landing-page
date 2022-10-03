@@ -80,7 +80,7 @@ function Section3() {
         </div>
         {/* bigger view */}
         <div class='hidden md:block h-60 w-fit block m-auto'>
-            <img src={vector} alt='wiggle'></img>
+            <img src={vector2} alt='wiggle'></img>
         </div>
 
 
